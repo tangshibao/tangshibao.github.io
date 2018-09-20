@@ -43,7 +43,7 @@
     
     <title>
         
-            归档: 2018/6 | 
+            配置HexoAdmin | 
         
         Tang
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Tang">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/2018/06/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/09/20/ConfigHexoAdmin/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Tang">
@@ -230,13 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/2018/06/">
+    <meta property="og:url" content="http://yoursite.com/2018/09/20/ConfigHexoAdmin/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018/6 | Tang">
+    <meta property="og:title" content="配置HexoAdmin | Tang">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Thu Sep 20 2018 13:07:30 GMT+0800">
+        <meta property="article:modified_time" content="Thu Sep 20 2018 15:49:18 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -244,13 +247,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2018/06/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html",
+    "headline": "配置HexoAdmin",
+    "datePublished": "Thu Sep 20 2018 13:07:30 GMT+0800",
+    "dateModified": "Thu Sep 20 2018 15:49:18 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "TangShibao",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://i.loli.net/2018/07/28/5b5c72c4282b7.png"
+        },
+        "description": "Hi"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Tang",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
 
 
     
@@ -284,93 +317,229 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置HexoAdmin"><span class="post-toc-number">1.</span> <span class="post-toc-text">配置HexoAdmin</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、设置登录账户"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">1、设置登录账户</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处"><span class="post-toc-number">1.0.1.1.</span> <span class="post-toc-text">1.1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-2填写账号，密码，和session加密串"><span class="post-toc-number">1.0.1.2.</span> <span class="post-toc-text">1.2填写账号，密码，和session加密串</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-3将生成的配置复制到站点配置文件中"><span class="post-toc-number">1.0.1.3.</span> <span class="post-toc-text">1.3将生成的配置复制到站点配置文件中</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、配置Deploy按钮"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">2、配置Deploy按钮</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-1在上一步的基础上添加deployCommand属性值"><span class="post-toc-number">1.0.2.1.</span> <span class="post-toc-text">2.1在上一步的基础上添加deployCommand属性值</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-2在设置好的位置上添加脚本文件（Windows下为-bat文件，Linux下为-sh文件）"><span class="post-toc-number">1.0.2.2.</span> <span class="post-toc-text">2.2在设置好的位置上添加脚本文件（Windows下为.bat文件，Linux下为.sh文件）</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-3更改JS文件以支持Windows环境"><span class="post-toc-number">1.0.2.3.</span> <span class="post-toc-text">2.3更改JS文件以支持Windows环境</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-4配置完成，重启HexoAdmin系统"><span class="post-toc-number">1.0.2.4.</span> <span class="post-toc-text">2.4配置完成，重启HexoAdmin系统</span></a></li></ol></li></ol></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/06/30/HowToBuildAPrivateBlog/">如何搭建自己的私人博客</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/06/30/HowToBuildAPrivateBlog/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://i.loli.net/2018/07/28/5b5c72c4282b7.png" width="44px" height="44px" alt="TangShibao's avatar">
-            </div>
-            <div>
-                <strong>TangShibao</strong>
-                <span>6月 30, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                配置HexoAdmin
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://i.loli.net/2018/07/28/5b5c72c4282b7.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>TangShibao</strong>
+        <span>9月 20, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=配置HexoAdmin&url=http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=配置HexoAdmin&url=http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html&via=TangShibao" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/09/20/ConfigHexoAdmin/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="配置HexoAdmin"><a href="#配置HexoAdmin" class="headerlink" title="配置HexoAdmin"></a>配置HexoAdmin</h2><h4 id="1、设置登录账户"><a href="#1、设置登录账户" class="headerlink" title="1、设置登录账户"></a>1、设置登录账户</h4><h5 id="1-1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处"><a href="#1-1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处" class="headerlink" title="1.1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处"></a>1.1启动管理系统后到设置选项页面，选择1步骤中的两个选项后，点击2处</h5><p><img src="https://i.loli.net/2018/09/20/5ba32c552c0a0.jpg" alt=""></p>
+<h5 id="1-2填写账号，密码，和session加密串"><a href="#1-2填写账号，密码，和session加密串" class="headerlink" title="1.2填写账号，密码，和session加密串"></a>1.2填写账号，密码，和session加密串</h5><p><img src="https://i.loli.net/2018/09/20/5ba32d6331b4d.jpg" alt=""></p>
+<h5 id="1-3将生成的配置复制到站点配置文件中"><a href="#1-3将生成的配置复制到站点配置文件中" class="headerlink" title="1.3将生成的配置复制到站点配置文件中"></a>1.3将生成的配置复制到站点配置文件中</h5><p><img src="https://i.loli.net/2018/09/20/5ba34aa94d36e.jpg" alt=""></p>
+<h4 id="2、配置Deploy按钮"><a href="#2、配置Deploy按钮" class="headerlink" title="2、配置Deploy按钮"></a>2、配置Deploy按钮</h4><h5 id="2-1在上一步的基础上添加deployCommand属性值"><a href="#2-1在上一步的基础上添加deployCommand属性值" class="headerlink" title="2.1在上一步的基础上添加deployCommand属性值"></a>2.1在上一步的基础上添加deployCommand属性值</h5><p>该属性值指定点击Deploy按钮时执行的脚本的位置</p>
+<p><img src="https://i.loli.net/2018/09/20/5ba34b1c2c136.jpg" alt=""></p>
+<h5 id="2-2在设置好的位置上添加脚本文件（Windows下为-bat文件，Linux下为-sh文件）"><a href="#2-2在设置好的位置上添加脚本文件（Windows下为-bat文件，Linux下为-sh文件）" class="headerlink" title="2.2在设置好的位置上添加脚本文件（Windows下为.bat文件，Linux下为.sh文件）"></a>2.2在设置好的位置上添加脚本文件（Windows下为.bat文件，Linux下为.sh文件）</h5><p>以Windows环境为例，在博客目录下新建文件夹admin_script，在该文件夹中建立脚本文件hexo-generate.bat。内容为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /k &quot;d: &amp; cd D:\75810\PersonalBlog\TY &amp; hexo d -g&quot;</span><br></pre></td></tr></table></figure>
+<p>其含义是，在cmd窗口中进入博客根目录并执行命令<code>hexo d -g</code></p>
+<p><img src="https://i.loli.net/2018/09/20/5ba34bb813eae.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2018/09/20/5ba34c12d7100.jpg" alt=""></p>
+<h5 id="2-3更改JS文件以支持Windows环境"><a href="#2-3更改JS文件以支持Windows环境" class="headerlink" title="2.3更改JS文件以支持Windows环境"></a>2.3更改JS文件以支持Windows环境</h5><p>更改原始的 博客根目录\node_modules\hexo-admin\deploy.js文件中的proc变量，</p>
+<p>由<code>var proc = spawn(command, [message], {detached: true});</code></p>
+<p>改为<code>var proc = spawn((process.platform === &quot;win32&quot; ? &quot;hexo.cmd&quot; : &quot;hexo&quot;), [&#39;d&#39;, &#39;-g&#39;]);</code></p>
+<p>更改后，全文内容如下</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> spawn = <span class="built_in">require</span>(<span class="string">'child_process'</span>).spawn</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">once</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> called = <span class="literal">false</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!called) fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">    called = <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params">command, message, done</span>) </span>&#123;</span><br><span class="line">  done = once(done);</span><br><span class="line">  <span class="comment">//var proc = spawn(command, [message], &#123;detached: true&#125;);</span></span><br><span class="line">  <span class="keyword">var</span> proc = spawn((process.platform === <span class="string">"win32"</span> ? <span class="string">"hexo.cmd"</span> : <span class="string">"hexo"</span>), [<span class="string">'d'</span>, <span class="string">'-g'</span>]);</span><br><span class="line">  <span class="keyword">var</span> stdout = <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">var</span> stderr = <span class="string">''</span>;</span><br><span class="line">  proc.stdout.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;stdout += data.toString()&#125;)</span><br><span class="line">  proc.stderr.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;stderr += data.toString()&#125;)</span><br><span class="line">  proc.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">    done(err, &#123;<span class="attr">stdout</span>: stdout, <span class="attr">stderr</span>: stderr&#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">  proc.on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    done(<span class="literal">null</span>, &#123;<span class="attr">stdout</span>: stdout, <span class="attr">stderr</span>: stderr&#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="2-4配置完成，重启HexoAdmin系统"><a href="#2-4配置完成，重启HexoAdmin系统" class="headerlink" title="2.4配置完成，重启HexoAdmin系统"></a>2.4配置完成，重启HexoAdmin系统</h5><p>博客根目录下运行<code>hexo server -s</code>命令启动服务</p>
+<p>登录界面</p>
+<p><img src="https://i.loli.net/2018/09/20/5ba350463d939.jpg" alt=""></p>
+<p>提交效果</p>
+<p><img src="https://i.loli.net/2018/09/20/5ba350e4a6d2b.jpg" alt=""></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/09/18/ManageTwoGitHub/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
